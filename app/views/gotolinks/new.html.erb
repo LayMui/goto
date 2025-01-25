@@ -1,0 +1,8 @@
+<div class="container">
+<%= simple_form_for @gotolink do |f| %>
+    <%= f.input :title %>
+    <%= f.input :url %>
+    <%= f.input :slug %>
+    <%= f.button :submit, "I want to create my link", class: "btn btn-secondary" %>
+  <% end %>
+</div>

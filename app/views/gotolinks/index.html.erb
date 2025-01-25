@@ -1,0 +1,11 @@
+<h1>Gotolinks</h1>
+
+
+<ul>
+  <% @gotolinks.each do |gotolink| %>
+    <li><%= link_to gotolink.title, gotolink.url %></li>
+  <% end %>
+</ul>
+
+
+<%= link_to "New Gotolink", new_gotolink_path %>

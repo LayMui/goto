@@ -1,0 +1,2 @@
+module GotolinksHelper
+end

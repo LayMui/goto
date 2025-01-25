@@ -19,6 +19,9 @@ class GotolinksController < ApplicationController
       # run validation
       # save to db, it won't save if the validation fails
       redirect_to gotolinks_path
+      # redirect update the status code to 302
+      # and make another request to the new location
+      # and go to the index action where the @gotolinks is refresh with updated data
     else
       render :new, status: :unprocessable_entity
       # only apply to post request
